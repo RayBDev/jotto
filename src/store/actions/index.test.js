@@ -18,7 +18,7 @@ describe("getSecretWord action creator", () => {
     moxios.wait(() => {
       const request = moxios.requests.mostRecent();
       request.respondWith({
-        state: 200,
+        status: 200,
         response: secretWord
       });
     });
